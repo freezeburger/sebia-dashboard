@@ -30,6 +30,8 @@ export interface ReviewDTO {
    * Horodatage ISO 8601.
    */
   reviewedAt: string;
+
+  analysisId: string;
 }
 
 /**
@@ -54,19 +56,8 @@ export interface AnalysisDTO {
   results: unknown;
 
   /**
-   * Statut global métier de l'analyse (optionnel).
-   * Ex: "PENDING_REVIEW", "ACCEPTED", "FLAGGED", etc.
-   */
-  status?: string;
-
-  /**
    * Horodatage de création de l'analyse.
    */
   createdAt: string;
 
-  /**
-   * Historique des actions de revue faites sur cette analyse.
-   * La corrélation est donc portée ici.
-   */
-  reviews?: ReviewDTO[];
 }
