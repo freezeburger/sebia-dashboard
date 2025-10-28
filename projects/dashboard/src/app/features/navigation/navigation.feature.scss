@@ -1,0 +1,20 @@
+:host{
+    padding: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+a:hover, a.current{
+    color:white;
+    background-color: #0d6efd;
+}

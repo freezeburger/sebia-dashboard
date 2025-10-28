@@ -1,0 +1,53 @@
+{
+  "name": "sebia-dashboard",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --project=dashboard",
+    "dev:api": "json-server ./db.json --port 5050",
+    "build": "ng build --project=dashboard",
+    "watch": "ng build --project=dashboard --watch --configuration development",
+    "test": "ng test --project=dashboard",
+    "compodoc:build": "compodoc -p ./projects/dashboard/tsconfig.doc.json",
+    "compodoc:build-and-serve": "compodoc -p ./projects/dashboard/tsconfig.doc.json -s",
+    "compodoc:serve": "compodoc -s"
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^20.1.0",
+    "@angular/compiler": "^20.1.0",
+    "@angular/core": "^20.1.0",
+    "@angular/forms": "^20.1.0",
+    "@angular/platform-browser": "^20.1.0",
+    "@angular/router": "^20.1.0",
+    "bootstrap": "^5.3.8",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "@angular/build": "^20.2.2",
+    "@angular/cli": "^20.1.0",
+    "@angular/compiler-cli": "^20.1.0",
+    "@compodoc/compodoc": "^1.1.30",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.8.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.8.2"
+  }
+}

@@ -1,0 +1,80 @@
+<main class="container p-5">
+  <h2>Notification Board</h2>
+  <hr />
+
+  @if(feedback && (feedback | async); as result ){
+    @if(!result.success){
+      <div class="alert alert-danger">
+        <strong>Oops</strong>
+        {{ result.error }}
+      </div>
+    }@else {
+        <div class="alert alert-success">
+        <strong>OK</strong>
+        Notification sent !
+      </div>
+    }
+  }
+
+  <div class="card">
+    <div class="card-header">
+      <h2>Create:</h2>
+    </div>
+    <div class="card-body">
+      <code>{{ notificationPayload | json }}</code>
+      <select class="form-control" [(ngModel)]="notificationPayload.level">
+        <option value="info" class="bg-info">Info</option>
+        <option value="warning" class="bg-warning">Warning</option>
+        <option value="error" class="bg-danger">Error</option>
+      </select>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Title"
+        [(ngModel)]="notificationPayload.title"
+      />
+      <textarea
+        class="form-control"
+        placeholder="Notification Text..."
+        [(ngModel)]="notificationPayload.message"
+      >
+      </textarea>
+      <button 
+        [disabled]=" !notificationPayload.title || !notificationPayload.message "
+        class="btn btn-primary" 
+        (click)="send()">Send</button>
+
+        @if(!notificationPayload.title || !notificationPayload.message){
+            <p>You must fill in the form.</p>
+        }
+        @if(!notificationPayload.title){
+            <p>Title missing.</p>
+        }
+        @if(!notificationPayload.message){
+            <p>Message missing.</p>
+        }
+        
+        
+    </div>
+  </div>
+
+  <hr />
+
+  <ul class="list-group">
+    @for( notification of notificationService.collection(); track notification.id){ 
+
+        <li class="list-grou-item d-flex">
+            <button 
+                class="btn btn-danger"
+                (click)="notificationService.delete(notification)"
+                >X</button>
+            <div>
+                {{notification.title}}
+            </div>
+        </li>
+
+    }@empty {
+        <div class="alert alert-info">Pas de notifications.</div>
+    }
+  </ul>
+</main>

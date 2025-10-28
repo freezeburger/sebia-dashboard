@@ -1,0 +1,216 @@
+{
+  "notifications": [
+    {
+      "id": "e072",
+      "level": "info",
+      "title": "aaa",
+      "message": "aaa"
+    }
+  ],
+  "analysis": [
+    {
+      "id": "ANL-0001",
+      "label": "Hémogramme complet",
+      "results": {
+        "globules_rouges": 4.8,
+        "globules_blancs": 6.5,
+        "plaquettes": 250
+      },
+      "createdAt": "2025-10-22T09:14:32Z"
+    },
+    {
+      "id": "ANL-0002",
+      "label": "Bilan hépatique",
+      "results": {
+        "ASAT": 22,
+        "ALAT": 28,
+        "bilirubine": 7.2
+      },
+      "createdAt": "2025-10-21T11:04:17Z"
+    },
+    {
+      "id": "ANL-0003",
+      "label": "Ionogramme sanguin",
+      "results": {
+        "sodium": 138,
+        "potassium": 4.1,
+        "chlorures": 101
+      },
+      "createdAt": "2025-10-19T14:52:45Z"
+    },
+    {
+      "id": "ANL-0004",
+      "label": "PCR SARS-CoV-2",
+      "results": {
+        "resultat": "NÉGATIF",
+        "ct_value": 0
+      },
+      "createdAt": "2025-10-25T07:12:09Z"
+    },
+    {
+      "id": "ANL-0005",
+      "label": "Créatinine sérique",
+      "results": {
+        "creatinine": 82,
+        "unite": "µmol/L"
+      },
+      "createdAt": "2025-10-20T10:37:02Z"
+    },
+    {
+      "id": "ANL-0006",
+      "label": "Glycémie à jeun",
+      "results": {
+        "glucose": 5.2,
+        "unite": "mmol/L"
+      },
+      "createdAt": "2025-10-18T08:42:17Z"
+    },
+    {
+      "id": "ANL-0007",
+      "label": "TSH (Thyroïde)",
+      "results": {
+        "TSH": 3.4,
+        "unite": "mUI/L"
+      },
+      "createdAt": "2025-10-23T11:05:21Z"
+    },
+    {
+      "id": "ANL-0008",
+      "label": "Hémoglobine glyquée (HbA1c)",
+      "results": {
+        "HbA1c": 6.1,
+        "unite": "%"
+      },
+      "createdAt": "2025-10-19T16:11:49Z"
+    },
+    {
+      "id": "ANL-0009",
+      "label": "Cholestérol total",
+      "results": {
+        "cholesterol_total": 5.4,
+        "HDL": 1.3,
+        "LDL": 3.1
+      },
+      "createdAt": "2025-10-17T13:00:11Z"
+    },
+    {
+      "id": "ANL-0010",
+      "label": "CRP (Protéine C-Réactive)",
+      "results": {
+        "CRP": 4.5,
+        "unite": "mg/L"
+      },
+      "createdAt": "2025-10-24T10:18:00Z"
+    },
+    {
+      "id": "ANL-0011",
+      "label": "Test urinaire standard",
+      "results": {
+        "proteines": "absentes",
+        "glucose": "absent",
+        "leucocytes": "faible trace"
+      },
+      "createdAt": "2025-10-25T09:41:33Z"
+    },
+    {
+      "id": "ANL-0012",
+      "label": "Ferritine sérique",
+      "results": {
+        "ferritine": 54,
+        "unite": "µg/L"
+      },
+      "createdAt": "2025-10-18T15:12:49Z"
+    },
+    {
+      "id": "ANL-0013",
+      "label": "Bilan lipidique complet",
+      "results": {
+        "cholesterol_total": 5.1,
+        "HDL": 1.2,
+        "LDL": 2.8,
+        "triglycerides": 1.3
+      },
+      "createdAt": "2025-10-22T08:41:19Z"
+    },
+    {
+      "id": "ANL-0014",
+      "label": "Dosage de la vitamine D",
+      "results": {
+        "vitamineD": 32,
+        "unite": "ng/mL"
+      },
+      "createdAt": "2025-10-23T13:21:09Z"
+    },
+    {
+      "id": "ANL-0015",
+      "label": "Examen cytobactériologique des urines (ECBU)",
+      "results": {
+        "bacteries": "absentes",
+        "leucocytes": "modérés",
+        "nitrites": "négatifs"
+      },
+      "createdAt": "2025-10-21T17:29:31Z"
+    },
+    {
+      "id": "ANL-0016",
+      "label": "Numération plaquettaire",
+      "results": {
+        "plaquettes": 245,
+        "unite": "G/L"
+      },
+      "createdAt": "2025-10-19T07:51:42Z"
+    },
+    {
+      "id": "ANL-0017",
+      "label": "Taux de prothrombine (TP)",
+      "results": {
+        "TP": 95,
+        "unite": "%"
+      },
+      "createdAt": "2025-10-20T12:00:00Z"
+    },
+    {
+      "id": "ANL-0018",
+      "label": "Bilan rénal",
+      "results": {
+        "uree": 4.5,
+        "creatinine": 79,
+        "clearance": 92
+      },
+      "createdAt": "2025-10-25T09:31:29Z"
+    },
+    {
+      "id": "ANL-0019",
+      "label": "Taux de calcium sanguin",
+      "results": {
+        "calcium": 2.35,
+        "unite": "mmol/L"
+      },
+      "createdAt": "2025-10-24T15:09:42Z"
+    },
+    {
+      "id": "ANL-0020",
+      "label": "Examen parasitologique des selles",
+      "results": {
+        "parasites": "aucun détecté",
+        "aspect": "normal"
+      },
+      "createdAt": "2025-10-26T08:18:19Z"
+    }
+  ],
+  "reviews": [],
+  "logs": [
+    {
+      "date": "2024-06-10T14:20:00",
+      "author": "Renaud Dubuis",
+      "description": "Added Compodoc to dashboard project",
+      "id": "1"
+    },
+    {
+      "id": "4822",
+      "date": "2024-06-10T14:20:00",
+      "author": "Renaud Dubuis",
+      "description": "New Record"
+    }
+  ]
+}

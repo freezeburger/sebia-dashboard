@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('../../../node_modules/bootstrap/dist/css/bootstrap.css');
+
+app-root>main{
+    display: block;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    height: 100vh;
+}
